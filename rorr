@@ -1,1 +1,43 @@
-/Users/ardhaviaadzanindy/Desktop/game/index.html
+index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baccarat Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Baccarat Game</h1>
+        <div class="game-area">
+            <div class="hand" id="player-hand">
+                <h2>Pemain</h2>
+                <div class="cards" id="player-cards"></div>
+                <div class="score" id="player-score">Score: 0</div>
+            </div>
+            <div class="hand" id="banker-hand">
+                <h2>Bankir</h2>
+                <div class="cards" id="banker-cards"></div>
+                <div class="score" id="banker-score">Score: 0</div>
+            </div>
+        </div>
+        <div class="betting-area">
+            <h3>Taruhan Anda: <span id="current-bet">Rp 0</span></h3>
+            <button id="decrease-bet">-</button>
+            <button id="increase-bet">+</button>
+            <button id="bet-2000">Taruh Rp 2.000</button>
+            <button id="bet-5000">Taruh Rp 5.000</button>
+            <button id="bet-player">Taruh pada Pemain</button>
+            <button id="bet-banker">Taruh pada Bankir</button>
+            <button id="bet-tie">Taruh pada Seri</button>
+        </div>
+        <button id="deal-button">Deal</button>
+        <div id="result"></div>
+        <div id="bet-result"></div>
+        <h3>Riwayat Permainan:</h3>
+        <ul id="history"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
